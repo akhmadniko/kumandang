@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak &amp; Pendaftaran — KUMANDANG</title>
+    <meta
+      name="description"
+      content="Hubungi Keluarga Mahasiswa Pandeglang atau daftarkan diri menjadi anggota resmi KUMANDANG."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='black'/><text x='50' y='68' font-size='52' font-weight='800' text-anchor='middle' fill='%23f97316' font-family='Inter,sans-serif'>K</text></svg>"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="logo">K</span>
+          <span>
+            KUMANDANG
+            <small>Keluarga Mahasiswa Pandeglang</small>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="kegiatan.html">Kegiatan</a>
+          <a href="pengurus.html">Pengurus</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="blog.html">Blog</a>
+          <a href="kontak.html" class="active">Kontak</a>
+          <a href="kontak.html#daftar" class="btn-register">Daftar Anggota</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="container">
+        <h1>Hubungi Kami</h1>
+        <p>Punya pertanyaan, ide kegiatan, atau ingin bergabung? Kami siap mendengar.</p>
+        <div class="breadcrumb"><a href="index.html">Beranda</a> / Kontak</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div>
+              <div class="section-head" style="margin-bottom: 0">
+                <span class="section-tag">Kontak</span>
+                <h2>Informasi Kontak</h2>
+                <p>Sampaikan kabar atau pertanyaanmu melalui kanal di bawah ini.</p>
+              </div>
+              <ul class="info-list">
+                <li>
+                  <span class="ic">✉️</span>
+                  <div>
+                    <strong>Email</strong>
+                    <span>kumandang.pandeglang@gmail.com</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="ic">📘</span>
+                  <div>
+                    <strong>Instagram</strong>
+                    <span>@kumandang_pandeglang</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="ic">📍</span>
+                  <div>
+                    <strong>Sekretariat</strong>
+                    <span>Kabupaten Pandeglang, Provinsi Banten</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="ic">🕐</span>
+                  <div>
+                    <strong>Waktu Respons</strong>
+                    <span>Senin–Sabtu, 08.00–20.00 WIB</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+                <a href="#">TikTok</a>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <h3>Kirim Pesan</h3>
+              <form id="form-kontak" novalidate>
+                <div class="form-group">
+                  <label for="nama">Nama</label>
+                  <input type="text" id="nama" name="nama" required placeholder="Nama lengkapmu" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="nama@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="topik">Topik</label>
+                  <select id="topik" name="topik">
+                    <option value="pertanyaan">Pertanyaan</option>
+                    <option value="ide">Usulan Ide Kegiatan</option>
+                    <option value="kerja-sama">Kerja Sama / Kolaborasi</option>
+                    <option value="lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="pesan">Pesan</label>
+                  <textarea id="pesan" name="pesan" required placeholder="Tulis pesanmu di sini..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark" style="width: 100%">Kirim Pesan</button>
+                <p class="form-note">
+                  Form ini membuka aplikasi email bawaan perangkatmu dengan isi pesan
+                  yang sudah terisi otomatis.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="daftar">
+        <div class="container">
+          <div class="section-head center">
+            <span class="section-tag">Keanggotaan</span>
+            <h2>Formulir Pendaftaran Anggota</h2>
+            <p>Isi data berikut dan tunggu verifikasi pengurus untuk bergabung.</p>
+          </div>
+          <div class="form-card" style="max-width: 640px; margin-inline: auto">
+            <form id="form-daftar" novalidate>
+              <div class="form-group">
+                <label for="f-nama">Nama Lengkap</label>
+                <input type="text" id="f-nama" name="nama" required placeholder="Sesuai KTP/KTM" />
+              </div>
+              <div class="form-group">
+                <label for="f-kampus">Universitas / Kampus</label>
+                <input type="text" id="f-kampus" name="kampus" required placeholder="Nama universitas" />
+              </div>
+              <div class="form-group">
+                <label for="f-prodi">Program Studi</label>
+                <input type="text" id="f-prodi" name="prodi" required placeholder="Jurusan / prodi" />
+              </div>
+              <div class="form-group">
+                <label for="f-angkatan">Angkatan</label>
+                <input type="text" id="f-angkatan" name="angkatan" placeholder="Contoh: 2026" />
+              </div>
+              <div class="form-group">
+                <label for="f-kecamatan">Kecamatan Asal (Pandeglang)</label>
+                <input type="text" id="f-kecamatan" name="kecamatan" placeholder="Kecamatan di Kabupaten Pandeglang" />
+              </div>
+              <div class="form-group">
+                <label for="f-hp">Nomor WhatsApp</label>
+                <input type="tel" id="f-hp" name="hp" placeholder="08xxxxxxxxxx" />
+              </div>
+              <div class="form-group">
+                <label for="f-minat">Minat / Divisi yang diminati</label>
+                <select id="f-minat" name="minat">
+                  <option value="akademik">Akademik &amp; Pendidikan</option>
+                  <option value="sosial">Sosial &amp; Masyarakat</option>
+                  <option value="olahraga">Olahraga &amp; Seni</option>
+                  <option value="humas">Humas &amp; Media</option>
+                  <option value="wirausaha">Kewirausahaan</option>
+                </select>
+                <div class="hint">Kamu tetap bisa jadi anggota umum dan memilih divisi nanti.</div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%">Kirim Pendaftaran</button>
+              <p class="form-note">
+                Form ini membuka aplikasi email dengan data yang sudah terisi.
+                Kamu juga bisa membalas WhatsApp pengurus untuk konfirmasi.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="cols">
+          <div class="brand-about">
+            <a href="index.html" class="brand">
+              <span class="logo">K</span>
+              <span>
+                KUMANDANG
+                <small>Keluarga Mahasiswa Pandeglang</small>
+              </span>
+            </a>
+            <p>Wadah silaturahmi, kepedulian, dan pengembangan diri mahasiswa asal Kabupaten Pandeglang.</p>
+          </div>
+          <div>
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="kegiatan.html">Kegiatan</a></li>
+              <li><a href="pengurus.html">Pengurus</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Lainnya</h4>
+            <ul>
+              <li><a href="kontak.html#daftar">Pendaftaran Anggota</a></li>
+              <li><a href="blog.html">Artikel &amp; Berita</a></li>
+              <li><a href="galeri.html">Dokumentasi Foto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <ul>
+              <li>kumandang.pandeglang@gmail.com</li>
+              <li>@kumandang_pandeglang</li>
+              <li>Kabupaten Pandeglang, Banten</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © <span class="year"></span> KUMANDANG — Keluarga Mahasiswa Pandeglang. Dibuat dengan penuh bangga.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
