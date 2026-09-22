@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var body = encodeURIComponent(
         "Nama: " + nama + "\nEmail: " + email + "\nTopik: " + topik + "\n\n" + pesan
       );
-      window.location.href = "mailto:kumandang.pandeglang@gmail.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:kumandang65@gmail.com?subject=" + subject + "&body=" + body;
     });
   }
 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "\nWA: " + (hp || "-") +
         "\nMinat Divisi: " + minat
       );
-      window.location.href = "mailto:kumandang.pandeglang@gmail.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:kumandang65@gmail.com?subject=" + subject + "&body=" + body;
     });
   }
 });
